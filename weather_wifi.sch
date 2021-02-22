@@ -7,11 +7,11 @@ Sheet 1 1
 Title "esp8266 wifi station"
 Date "2021-02-06"
 Rev "1.0"
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comp "SumWifi"
+Comment1 "A wifi weather station"
+Comment2 "Based on esp8266"
+Comment3 "Authored by cheng, xcchengl@126.com"
+Comment4 "Just for fun"
 $EndDescr
 $Comp
 L MCU_Espressif:ESP8266EX U2
@@ -422,8 +422,6 @@ Wire Wire Line
 	10400 4250 10400 4175
 Text GLabel 1750 4850 0    50   Input ~ 10
 gpio_16
-Text GLabel 1775 4450 0    50   Input ~ 10
-adc
 $Comp
 L Switch:SW_Push SW1
 U 1 1 602471A8
@@ -1630,4 +1628,6 @@ Text Notes 10150 3525 0    39   ~ 0
 gpio2 has pull up \nresistor on TFT_BL
 Wire Wire Line
 	9150 3375 9150 3675
+Text GLabel 1750 4450 0    50   Input ~ 10
+adc
 $EndSCHEMATC
